@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.lp-body {
+  font-family: "小塚ゴシック Pro", 游ゴシック, Meiryo, sans-serif;
+  font-size: 16px;
+  .lp-head {
+    background: url(../images/w-lp-head.jpg) no-repeat center center;
+    background-size: cover;
+    // width: 500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0 0;
+    .lp-head-inner {
+      width: 90%;
+      margin: 0 auto;
+      .lp-head-box {
+        background-color: white;
+        width: 60%;
+        box-sizing: border-box;
+        border: #7b7a71 solid 5px;
+        border-radius: 10px;
+        padding: 10px 15px 50px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px;
+        margin-bottom: 30px;
+        .lp-head-ttl {
+          font-weight: bold;
+          font-size: 40px;
+          margin-bottom: 0;
+        }
+        .lp-head-ttls {
+          font-size: 16px;
+        }
+        .w-code-txt01 {
+          line-height: 2em;
+        }
+        .w-code-txt02 {
+          font-size: 1.6rem;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        .yellow-under-line {
+          background: linear-gradient(transparent 60%, yellow 50%);
+        }
+        .w-code-btn01 {
+          background: #3399FF;
+          color: white;
+          font-size: 1rem;
+          display: block;
+          width: 70%;
+          margin: 0 auto;
+          height: 50px;
+          padding: 5px 10px;
+          line-height: 50px;
+          border-radius: 10px;
+          transition: all 0.3s ease-in-out;
+        }
+        .w-code-btn01:hover {
+          opacity: 0.7;
+        }
+        .warning {
+          font-size: 0.8rem;
+        }
+      }
+      .lp-head-list {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0 80px;
+        text-align: center;
+        color: #fff;
+        .lp-head-img {
+          width: 270px;
+        }
+      }
+    }
+  }
+  .lp-head-ft {
+    background-color: black;
+    color: #fff;
+    padding: 100px 0 50px 0 ;
+    display: flex;
+    justify-content: center;
+    .lp-head-ft-txt01 {
+      text-align: center;
+      border-bottom: solid 1px #fff;
+      margin-bottom: 30px;
+      .lp-head-ft-ttl {
+        margin-bottom: 0;
+      }
+    }
+    .lp-head-ft-txt02 {
+      font-size: 1.0rem;
+    }
+  }
+}
+
+.lp-header {
+  width: 100%;
+  background: rgba(255,255,255, .9);;
+  height: 110px;
+  position: fixed;
+  .header-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px;
+    height: 110px;
+    .lp-header-box {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      .info {
+        color: #000;
+      }
+    }
+    .lp-main-info {
+      .h-info {
+        color: #fff;
+        background: #FF9900;
+        font-weight: bold;
+        line-height: 50px;
+        font-size: 1rem;
+        padding: 15px 40px 15px 10px;
+        transition: all 0.3s ease;
+        .allow-ico {
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          top: 42%;
+          margin-left: 5px;
+          border-top: 3px solid #fff;
+          border-right: 3px solid #fff;
+          transform: rotate(45deg);
+        }
+      }
+      .h-info:hover {
+        background: #C0C0C0;
+      }
+    }
+  }
+
+}

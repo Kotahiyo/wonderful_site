@@ -1,1 +1,203 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.lp-body {
+  font-family: "小塚ゴシック Pro", 游ゴシック, Meiryo, sans-serif;
+  font-size: 16px;
+}
+
+.lp-body .lp-head {
+  background: url(../images/w-lp-head.jpg) no-repeat center center;
+  background-size: cover;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 200px 0 0;
+}
+
+.lp-body .lp-head .lp-head-inner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.lp-body .lp-head .lp-head-inner .lp-head-box {
+  background-color: white;
+  width: 60%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: #7b7a71 solid 5px;
+  border-radius: 10px;
+  padding: 10px 15px 50px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.lp-body .lp-head .lp-head-inner .lp-head-box .lp-head-ttl {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.lp-body .lp-head .lp-head-inner .lp-head-box .lp-head-ttls {
+  font-size: 16px;
+}
+
+.lp-body .lp-head .lp-head-inner .lp-head-box .w-code-txt01 {
+  line-height: 2em;
+}
+
+.lp-body .lp-head .lp-head-inner .lp-head-box .w-code-txt02 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.lp-body .lp-head .lp-head-inner .lp-head-box .yellow-under-line {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(50%, yellow));
+  background: linear-gradient(transparent 60%, yellow 50%);
+}
+
+.lp-body .lp-head .lp-head-inner .lp-head-box .w-code-btn01 {
+  background: #3399FF;
+  color: white;
+  font-size: 1rem;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  height: 50px;
+  padding: 5px 10px;
+  line-height: 50px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.lp-body .lp-head .lp-head-inner .lp-head-box .w-code-btn01:hover {
+  opacity: 0.7;
+}
+
+.lp-body .lp-head .lp-head-inner .lp-head-box .warning {
+  font-size: 0.8rem;
+}
+
+.lp-body .lp-head .lp-head-inner .lp-head-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 80px;
+  text-align: center;
+  color: #fff;
+}
+
+.lp-body .lp-head .lp-head-inner .lp-head-list .lp-head-img {
+  width: 270px;
+}
+
+.lp-body .lp-head-ft {
+  background-color: black;
+  color: #fff;
+  padding: 100px 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lp-body .lp-head-ft .lp-head-ft-txt01 {
+  text-align: center;
+  border-bottom: solid 1px #fff;
+  margin-bottom: 30px;
+}
+
+.lp-body .lp-head-ft .lp-head-ft-txt01 .lp-head-ft-ttl {
+  margin-bottom: 0;
+}
+
+.lp-body .lp-head-ft .lp-head-ft-txt02 {
+  font-size: 1.0rem;
+}
+
+.lp-header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  height: 110px;
+  position: fixed;
+}
+
+.lp-header .header-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px;
+  height: 110px;
+}
+
+.lp-header .header-container .lp-header-box {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+}
+
+.lp-header .header-container .lp-header-box .info {
+  color: #000;
+}
+
+.lp-header .header-container .lp-main-info .h-info {
+  color: #fff;
+  background: #FF9900;
+  font-weight: bold;
+  line-height: 50px;
+  font-size: 1rem;
+  padding: 15px 40px 15px 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.lp-header .header-container .lp-main-info .h-info .allow-ico {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 42%;
+  margin-left: 5px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.lp-header .header-container .lp-main-info .h-info:hover {
+  background: #C0C0C0;
+}
+/*# sourceMappingURL=main.css.map */
