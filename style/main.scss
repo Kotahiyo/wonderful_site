@@ -9,63 +9,33 @@ a {
 .lp-body {
   font-family: "小塚ゴシック Pro", 游ゴシック, Meiryo, sans-serif;
   font-size: 16px;
-  .lp-head {
-    background: url(../images/w-lp-head.jpg) no-repeat center center;
-    background-size: cover;
-    // width: 500px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 200px 0 0;
-    .lp-head-inner {
-      width: 90%;
-      margin: 0 auto;
-      .lp-head-box {
-        background-color: white;
-        width: 60%;
-        box-sizing: border-box;
-        border: #7b7a71 solid 5px;
-        border-radius: 10px;
-        padding: 10px 15px 50px;
-        text-align: center;
-        margin: 0 auto;
+  @media screen and (min-width: 960px) {
+    .lp-head {
+      padding: 100px 0 20px 0;
+      .lp-main-box {
+        padding: 200px;
+        width: 80%;
         font-size: 20px;
-        margin-bottom: 30px;
+        margin: 0 auto;
+        margin-bottom: 50px;
         .lp-head-ttl {
-          font-weight: bold;
-          font-size: 40px;
-          margin-bottom: 0;
+          font-size: 2.5rem;
         }
         .lp-head-ttls {
-          font-size: 16px;
-        }
-        .w-code-txt01 {
-          line-height: 2em;
+          font-size: 1rem;
         }
         .w-code-txt02 {
           font-size: 1.6rem;
-          font-weight: bold;
           margin-bottom: 10px;
         }
-        .yellow-under-line {
-          background: linear-gradient(transparent 60%, yellow 50%);
-        }
         .w-code-btn01 {
-          background: #3399FF;
-          color: white;
           font-size: 1rem;
-          display: block;
           width: 70%;
           margin: 0 auto;
           height: 50px;
           padding: 5px 10px;
           line-height: 50px;
           border-radius: 10px;
-          transition: all 0.3s ease-in-out;
-        }
-        .w-code-btn01:hover {
-          opacity: 0.7;
         }
         .warning {
           font-size: 0.8rem;
@@ -73,9 +43,9 @@ a {
       }
       .lp-head-list {
         display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        padding: 0 80px;
+        justify-content: space-around;
+        padding: 0 100px;
+        margin: 0 auto -120px;
         text-align: center;
         color: #fff;
         .lp-head-img {
@@ -83,24 +53,125 @@ a {
         }
       }
     }
+    .lp-head-ft {
+      padding: 100px 0 50px 0 ;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    .lp-head {
+      padding: 100px 0 0 0 ;
+      .lp-main-box {
+        padding: 200px 0 0;
+        width: 90%;
+        font-size: 40px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        .lp-head-ttl {
+          font-size: 4rem;
+        }
+        .lp-head-ttls {
+          font-size: 1.5rem;
+        }
+        .w-code-txt02 {
+          font-size: 1.8rem;
+          margin-bottom: 20px;
+        }
+        .w-code-btn01 {
+          font-size: 1.5rem;
+          width: 80%;
+          margin: 0 auto;
+          margin-top: 50px;
+          height: 80px;
+          padding: 5px 10px;
+          line-height: 80px;
+          border-radius: 10px;
+        }
+        .warning {
+          font-size: 1.2rem;
+        }
+      }
+      .lp-head-list {
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0 auto -1280px;
+        padding: 0 80px;
+        text-align: center;
+        color: #fff;
+        .lp-head-img {
+          width: 320px;
+        }
+      }
+    }
+    .lp-head-ft {
+      padding: 1300px 0 50px 0 ;
+    }
+  }
+  .lp-head {
+    background: url(../images/w-lp-head.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    .lp-head-inner {
+      width: 90%;
+      margin: 0 auto;
+      .lp-main-box {
+        background-color: white;
+        box-sizing: border-box;
+        border: #7b7a71 solid 5px;
+        border-radius: 10px;
+        padding: 10px 15px 50px;
+        text-align: center;
+        .lp-head-ttl {
+          font-weight: bold;
+          margin-bottom: 0;
+        }
+        .w-code-txt01 {
+          line-height: 2em;
+        }
+        .w-code-txt02 {
+          font-weight: bold;
+        }
+        .yellow-under-line {
+          background: linear-gradient(transparent 60%, yellow 50%);
+        }
+        .w-code-btn01 {
+          background: #3399FF;
+          color: white;
+          display: block;
+          transition: all 0.3s ease-in-out;
+        }
+        .w-code-btn01:hover {
+          opacity: 0.7;
+        }
+      }
+
+    }
   }
   .lp-head-ft {
     background-color: black;
     color: #fff;
-    padding: 100px 0 50px 0 ;
     display: flex;
     justify-content: center;
-    .lp-head-ft-txt01 {
-      text-align: center;
-      border-bottom: solid 1px #fff;
-      margin-bottom: 30px;
-      .lp-head-ft-ttl {
-        margin-bottom: 0;
+    .lp-head-ft-txtbox {
+      padding: 0 30px;
+      .lp-head-ft-txt01 {
+        font-size: 2rem;
+        text-align: center;
+        border-bottom: solid 1px #fff;
+        margin-bottom: 30px;
+        .lp-head-ft-ttl {
+          margin-bottom: 0;
+        }
+      }
+      .lp-head-ft-txt02 {
+        font-size: 2.3rem;
       }
     }
-    .lp-head-ft-txt02 {
-      font-size: 1.0rem;
-    }
+
   }
 }
 
@@ -116,39 +187,77 @@ a {
     align-items: center;
     padding: 0 30px;
     height: 110px;
-    .lp-header-box {
-      width: 50%;
-      display: flex;
-      justify-content: space-between;
-      font-weight: bold;
-      .info {
-        color: #000;
+    @media screen and (min-width: 960px) {
+      .lp-header-box {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
       }
-    }
-    .lp-main-info {
-      .h-info {
-        color: #fff;
-        background: #FF9900;
+      .lp-header-menu {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         font-weight: bold;
-        line-height: 50px;
-        font-size: 1rem;
-        padding: 15px 40px 15px 10px;
-        transition: all 0.3s ease;
-        .allow-ico {
-          width: 15px;
-          height: 15px;
-          position: absolute;
-          top: 42%;
-          margin-left: 5px;
-          border-top: 3px solid #fff;
-          border-right: 3px solid #fff;
-          transform: rotate(45deg);
+        .info {
+          color: #000;
         }
       }
-      .h-info:hover {
-        background: #C0C0C0;
+      .lp-main-info {
+        .h-info {
+          color: #fff;
+          background: #FF9900;
+          font-weight: bold;
+          line-height: 50px;
+          font-size: 1rem;
+          padding: 15px 40px 15px 10px;
+          transition: all 0.3s ease;
+          .allow-ico {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 42%;
+            margin-left: 5px;
+            border-top: 3px solid #fff;
+            border-right: 3px solid #fff;
+            transform: rotate(45deg);
+          }
+        }
+        .h-info:hover {
+          background: #C0C0C0;
+        }
+      }
+      .header-menu-sm {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 960px) {
+      .lp-header-box {
+        display: none;
+      }
+      .header-menu-sm {
+        width: 70%;
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+        .menu-sm-box {
+          width: 100px;
+          height: 70px;
+          margin-top: 20px;
+          margin-right: 20px;
+          .menu-border-box {
+            width: 25px;
+            height: 50px;
+            margin-top: 20px;
+            .menu-border {
+              display: block;
+              margin-top: 5px;
+              border: 1px solid #666666;
+              border-radius: 5px;
+            }
+          }
+        }
       }
     }
   }
-
 }
